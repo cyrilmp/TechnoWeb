@@ -1,7 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fff1fa6b-fce9-4b38-ab8f-2e9f4709a952" name="Default" comment="" />
+    <list default="true" id="fff1fa6b-fce9-4b38-ab8f-2e9f4709a952" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/lib/commons-logging-1.2.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lib/gson-2.8.0.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lib/httpclient-4.0.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lib/httpcomponents-httpcore-4.4.4.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/CreateRequest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/TestResponse.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Views.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/templates/footer.ftl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/templates/index.ftl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/templates/list-users.ftl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/templates/list.ftl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/templates/menu.ftl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/templates/newuser.ftl" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/TechnoWeb.iml" afterPath="$PROJECT_DIR$/TechnoWeb.iml" />
+      <change beforePath="$PROJECT_DIR$/out/production/TechnoWeb/App.class" afterPath="$PROJECT_DIR$/out/production/TechnoWeb/App.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TechnoWeb/DAO/Sql2oUserDAO.class" afterPath="$PROJECT_DIR$/out/production/TechnoWeb/DAO/Sql2oUserDAO.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TechnoWeb/DAO/UserDAO.class" afterPath="$PROJECT_DIR$/out/production/TechnoWeb/DAO/UserDAO.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TechnoWeb/Model/Element.class" afterPath="$PROJECT_DIR$/out/production/TechnoWeb/Model/Element.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TechnoWeb/Model/List.class" afterPath="$PROJECT_DIR$/out/production/TechnoWeb/Model/List.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TechnoWeb/Model/Role.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/TechnoWeb/Model/Status.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/TechnoWeb/Model/User.class" afterPath="$PROJECT_DIR$/out/production/TechnoWeb/Model/User.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/TechnoWeb/script.sql" afterPath="$PROJECT_DIR$/out/production/TechnoWeb/script.sql" />
+      <change beforePath="$PROJECT_DIR$/src/App.java" afterPath="$PROJECT_DIR$/src/App.java" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/ElementDAO.java" afterPath="$PROJECT_DIR$/src/DAO/ElementDAO.java" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/ListDAO.java" afterPath="$PROJECT_DIR$/src/DAO/ListDAO.java" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/Sql2oElementDAO.java" afterPath="$PROJECT_DIR$/src/DAO/Sql2oElementDAO.java" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/Sql2oListDAO.java" afterPath="$PROJECT_DIR$/src/DAO/Sql2oListDAO.java" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/Sql2oUserDAO.java" afterPath="$PROJECT_DIR$/src/DAO/Sql2oUserDAO.java" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/UserDAO.java" afterPath="$PROJECT_DIR$/src/DAO/UserDAO.java" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Element.java" afterPath="$PROJECT_DIR$/src/Model/Element.java" />
+      <change beforePath="$PROJECT_DIR$/src/Model/List.java" afterPath="$PROJECT_DIR$/src/Model/List.java" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Role.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Status.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/Model/User.java" afterPath="$PROJECT_DIR$/src/Model/User.java" />
+      <change beforePath="$PROJECT_DIR$/src/script.sql" afterPath="$PROJECT_DIR$/src/script.sql" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -10,41 +48,60 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/TechnoWeb$App.coverage" NAME="App Coverage Results" MODIFIED="1520518862129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="TechnoWeb" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="Element.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/Element.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="658">
+              <caret line="78" column="21" lean-forward="true" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
               <folding>
-                <element signature="e#652#653#0" expanded="true" />
-                <element signature="e#680#681#0" expanded="true" />
-                <element signature="e#722#723#0" expanded="true" />
-                <element signature="e#756#757#0" expanded="true" />
-                <element signature="e#794#795#0" expanded="true" />
-                <element signature="e#828#829#0" expanded="true" />
-                <element signature="e#882#883#0" expanded="true" />
-                <element signature="e#928#929#0" expanded="true" />
-                <element signature="e#958#959#0" expanded="true" />
-                <element signature="e#984#985#0" expanded="true" />
-                <element signature="e#1022#1023#0" expanded="true" />
-                <element signature="e#1052#1053#0" expanded="true" />
-                <element signature="e#1085#1086#0" expanded="true" />
-                <element signature="e#1114#1115#0" expanded="true" />
-                <element signature="e#1158#1159#0" expanded="true" />
-                <element signature="e#1194#1195#0" expanded="true" />
-                <element signature="e#1237#1238#0" expanded="true" />
-                <element signature="e#1273#1274#0" expanded="true" />
-                <element signature="e#1334#1335#0" expanded="true" />
-                <element signature="e#1384#1385#0" expanded="true" />
-                <element signature="e#1425#1426#0" expanded="true" />
-                <element signature="e#1459#1460#0" expanded="true" />
-                <element signature="e#1516#1517#0" expanded="true" />
-                <element signature="e#1562#1563#0" expanded="true" />
+                <element signature="e#672#673#0" expanded="true" />
+                <element signature="e#700#701#0" expanded="true" />
+                <element signature="e#742#743#0" expanded="true" />
+                <element signature="e#776#777#0" expanded="true" />
+                <element signature="e#814#815#0" expanded="true" />
+                <element signature="e#848#849#0" expanded="true" />
+                <element signature="e#902#903#0" expanded="true" />
+                <element signature="e#948#949#0" expanded="true" />
+                <element signature="e#978#979#0" expanded="true" />
+                <element signature="e#1004#1005#0" expanded="true" />
+                <element signature="e#1042#1043#0" expanded="true" />
+                <element signature="e#1072#1073#0" expanded="true" />
+                <element signature="e#1105#1106#0" expanded="true" />
+                <element signature="e#1134#1135#0" expanded="true" />
+                <element signature="e#1178#1179#0" expanded="true" />
+                <element signature="e#1214#1215#0" expanded="true" />
+                <element signature="e#1257#1258#0" expanded="true" />
+                <element signature="e#1293#1294#0" expanded="true" />
+                <element signature="e#1354#1355#0" expanded="true" />
+                <element signature="e#1404#1405#0" expanded="true" />
+                <element signature="e#1445#1446#0" expanded="true" />
+                <element signature="e#1479#1480#0" expanded="true" />
+                <element signature="e#1536#1537#0" expanded="true" />
+                <element signature="e#1582#1583#0" expanded="true" />
+                <element signature="e#1608#1609#0" expanded="true" />
+                <element signature="e#1633#1634#0" expanded="true" />
+                <element signature="e#1666#1667#0" expanded="true" />
+                <element signature="e#1694#1695#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,8 +110,8 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+            <state relative-caret-position="406">
+              <caret line="69" column="31" lean-forward="true" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,11 +119,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDAO.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="list-users.ftl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/list-users.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newuser.ftl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/templates/newuser.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="25" column="47" lean-forward="true" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DAO/UserDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            <state relative-caret-position="126">
+              <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,104 +154,52 @@
       <file leaf-file-name="ElementDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DAO/ElementDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sql2oElementDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DAO/Sql2oElementDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sql2oListDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DAO/Sql2oListDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DAO/ListDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sql2oUserDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DAO/Sql2oUserDAO.java">
+      <file leaf-file-name="index.ftl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/index.ftl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
-              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.ftl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/menu.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="50" lean-forward="true" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Views.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Views.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="78" column="93" lean-forward="true" selection-start-line="78" selection-start-column="93" selection-end-line="78" selection-end-column="93" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#260#261#0" expanded="true" />
-                <element signature="e#294#295#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="List.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/List.java">
+      <file leaf-file-name="CreateRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CreateRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            <state relative-caret-position="112">
+              <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
               <folding>
-                <element signature="e#520#521#0" expanded="true" />
-                <element signature="e#548#549#0" expanded="true" />
-                <element signature="e#590#591#0" expanded="true" />
-                <element signature="e#624#625#0" expanded="true" />
-                <element signature="e#662#663#0" expanded="true" />
-                <element signature="e#696#697#0" expanded="true" />
-                <element signature="e#750#751#0" expanded="true" />
-                <element signature="e#796#797#0" expanded="true" />
-                <element signature="e#843#844#0" expanded="true" />
-                <element signature="e#874#875#0" expanded="true" />
-                <element signature="e#934#935#0" expanded="true" />
-                <element signature="e#974#975#0" expanded="true" />
-                <element signature="e#1015#1016#0" expanded="true" />
-                <element signature="e#1043#1044#0" expanded="true" />
-                <element signature="e#1094#1095#0" expanded="true" />
-                <element signature="e#1128#1129#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding>
-                <element signature="e#356#357#0" expanded="true" />
-                <element signature="e#383#384#0" expanded="true" />
-                <element signature="e#423#424#0" expanded="true" />
-                <element signature="e#450#451#0" expanded="true" />
-                <element signature="e#486#487#0" expanded="true" />
-                <element signature="e#518#519#0" expanded="true" />
-                <element signature="e#568#569#0" expanded="true" />
-                <element signature="e#605#606#0" expanded="true" />
-                <element signature="e#634#635#0" expanded="true" />
-                <element signature="e#661#662#0" expanded="true" />
-                <element signature="e#699#700#0" expanded="true" />
-                <element signature="e#731#732#0" expanded="true" />
-                <element signature="e#764#765#0" expanded="true" />
-                <element signature="e#792#793#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -188,8 +213,18 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>spr</find>
+      <find>http</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -206,15 +241,34 @@
         <option value="$PROJECT_DIR$/src/User.java" />
         <option value="$PROJECT_DIR$/src/Controller/Connection.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Model/Element.java" />
-        <option value="$PROJECT_DIR$/src/Model/List.java" />
-        <option value="$PROJECT_DIR$/src/Model/Role.java" />
         <option value="$PROJECT_DIR$/src/Model/Status.java" />
+        <option value="$PROJECT_DIR$/src/Model/List.java" />
+        <option value="$PROJECT_DIR$/src/DAO/ListDAO.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6d043851-875e-4284-9806-6cb7a5324660/console.sql" />
+        <option value="$PROJECT_DIR$/src/DAO/Sql2oListDAO.java" />
+        <option value="$PROJECT_DIR$/src/templates/helloworld.html" />
+        <option value="$PROJECT_DIR$/src/templates/index.ftl.html" />
+        <option value="$PROJECT_DIR$/src/templates/helloworld.ftl" />
+        <option value="$PROJECT_DIR$/src/Model/Role.java" />
         <option value="$PROJECT_DIR$/src/Model/User.java" />
-        <option value="$PROJECT_DIR$/src/DAO/Sql2oUserDAO.java" />
+        <option value="$PROJECT_DIR$/src/index.ftl" />
+        <option value="$PROJECT_DIR$/src/public/style.css" />
+        <option value="$PROJECT_DIR$/src/templates/d.html" />
+        <option value="$PROJECT_DIR$/src/templates/footer.ftl" />
         <option value="$PROJECT_DIR$/src/App.java" />
         <option value="$PROJECT_DIR$/src/DAO/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/DAO/Sql2oUserDAO.java" />
+        <option value="$PROJECT_DIR$/src/templates/list.ftl" />
+        <option value="$PROJECT_DIR$/src/templates/index.ftl" />
+        <option value="$PROJECT_DIR$/src/script.sql" />
         <option value="$PROJECT_DIR$/src/DAO/ElementDAO.java" />
+        <option value="$PROJECT_DIR$/src/DAO/Sql2oElementDAO.java" />
+        <option value="$PROJECT_DIR$/src/Model/Element.java" />
+        <option value="$PROJECT_DIR$/src/Views.java" />
+        <option value="$PROJECT_DIR$/src/CreateRequest.java" />
+        <option value="$PROJECT_DIR$/src/templates/menu.ftl" />
+        <option value="$PROJECT_DIR$/src/templates/list-users.ftl" />
+        <option value="$PROJECT_DIR$/src/templates/newuser.ftl" />
       </list>
     </option>
   </component>
@@ -225,10 +279,11 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="972" />
-    <option name="width" value="956" />
+    <option name="x" value="952" />
+    <option name="width" value="976" />
     <option name="height" value="1038" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -244,14 +299,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="TechnoWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="TechnoWeb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TechnoWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TechnoWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TechnoWeb" type="b2602c69:ProjectViewProjectNode" />
@@ -270,12 +328,26 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Model" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="TechnoWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TechnoWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TechnoWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TechnoWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,6 +358,21 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="H2" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Dev\Git\TechnoWeb\lib" />
+      <recent name="C:\Dev\Git\TechnoWeb\src\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Dev\Git\TechnoWeb\lib" />
+      <recent name="C:\Dev\Git\TechnoWeb\src" />
+      <recent name="C:\Dev\Git\TechnoWeb\src\public" />
+      <recent name="C:\Dev\Git\TechnoWeb\src\templates" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -299,7 +386,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.App">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -355,6 +442,11 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="httpclient-4.0.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/lib/httpclient-4.0.jar" />
+      <envs />
+    </configuration>
     <configuration name="sql2o-1.5.4.jar" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="JAR_PATH" value="$PROJECT_DIR$/lib/sql2o-1.5.4.jar" />
@@ -400,13 +492,15 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="JAR Application.sql2o-1.5.4.jar" />
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="JAR Application.sql2o-1.5.4.jar" />
+      <item index="1" class="java.lang.String" itemvalue="Application.App" />
+      <item index="2" class="java.lang.String" itemvalue="JAR Application.httpclient-4.0.jar" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.App" />
+        <item index="1" class="java.lang.String" itemvalue="JAR Application.httpclient-4.0.jar" />
       </list>
     </recent_temporary>
   </component>
@@ -423,12 +517,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1520428446376</updated>
-      <workItem from="1520428449438" duration="8606000" />
+      <workItem from="1520428449438" duration="9863000" />
+      <workItem from="1520440504272" duration="11000" />
+      <workItem from="1520493490966" duration="16530000" />
+      <workItem from="1520514285371" duration="182000" />
+      <workItem from="1520514491146" duration="4417000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8606000" />
+    <option name="totallyTimeSpent" value="31003000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -443,33 +541,35 @@
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17127071" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36906078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1234375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21767956" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -512,137 +612,77 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Controller/Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/sql2o-1.5.4.jar!/org/sql2o/Connection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="290" column="0" lean-forward="false" selection-start-line="290" selection-start-column="0" selection-end-line="290" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Status.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO/Sql2oUserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#294#295#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/Element.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+            <element signature="e#948#949#0" expanded="true" />
+            <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1004#1005#0" expanded="true" />
+            <element signature="e#1042#1043#0" expanded="true" />
+            <element signature="e#1072#1073#0" expanded="true" />
+            <element signature="e#1105#1106#0" expanded="true" />
+            <element signature="e#1134#1135#0" expanded="true" />
+            <element signature="e#1178#1179#0" expanded="true" />
+            <element signature="e#1214#1215#0" expanded="true" />
+            <element signature="e#1257#1258#0" expanded="true" />
+            <element signature="e#1293#1294#0" expanded="true" />
+            <element signature="e#1354#1355#0" expanded="true" />
+            <element signature="e#1404#1405#0" expanded="true" />
+            <element signature="e#1445#1446#0" expanded="true" />
+            <element signature="e#1479#1480#0" expanded="true" />
+            <element signature="e#1536#1537#0" expanded="true" />
+            <element signature="e#1582#1583#0" expanded="true" />
+            <element signature="e#1608#1609#0" expanded="true" />
+            <element signature="e#1633#1634#0" expanded="true" />
+            <element signature="e#1666#1667#0" expanded="true" />
+            <element signature="e#1694#1695#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/ElementDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/Sql2oElementDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#652#653#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#722#723#0" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-            <element signature="e#828#829#0" expanded="true" />
-            <element signature="e#882#883#0" expanded="true" />
-            <element signature="e#928#929#0" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-            <element signature="e#984#985#0" expanded="true" />
-            <element signature="e#1022#1023#0" expanded="true" />
-            <element signature="e#1052#1053#0" expanded="true" />
-            <element signature="e#1085#1086#0" expanded="true" />
-            <element signature="e#1114#1115#0" expanded="true" />
-            <element signature="e#1158#1159#0" expanded="true" />
-            <element signature="e#1194#1195#0" expanded="true" />
-            <element signature="e#1237#1238#0" expanded="true" />
-            <element signature="e#1273#1274#0" expanded="true" />
-            <element signature="e#1334#1335#0" expanded="true" />
-            <element signature="e#1384#1385#0" expanded="true" />
-            <element signature="e#1425#1426#0" expanded="true" />
-            <element signature="e#1459#1460#0" expanded="true" />
-            <element signature="e#1516#1517#0" expanded="true" />
-            <element signature="e#1562#1563#0" expanded="true" />
-          </folding>
+          <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/List.java">
+    <entry file="file://$PROJECT_DIR$/src/DAO/Sql2oListDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        <state relative-caret-position="42">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
           <folding>
-            <element signature="e#520#521#0" expanded="true" />
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-            <element signature="e#696#697#0" expanded="true" />
-            <element signature="e#750#751#0" expanded="true" />
-            <element signature="e#796#797#0" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-            <element signature="e#874#875#0" expanded="true" />
-            <element signature="e#934#935#0" expanded="true" />
-            <element signature="e#974#975#0" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
-            <element signature="e#1094#1095#0" expanded="true" />
-            <element signature="e#1128#1129#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="e#356#357#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
-            <element signature="e#518#519#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#661#662#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#764#765#0" expanded="true" />
-            <element signature="e#792#793#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -655,37 +695,419 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO/Sql2oListDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/DAO/Sql2oUserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="756">
+          <caret line="43" column="36" lean-forward="false" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#260#261#0" expanded="false" />
+            <element signature="e#294#295#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAO/Sql2oElementDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/Model/List.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="777">
+          <caret line="55" column="24" lean-forward="false" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Element.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+            <element signature="e#948#949#0" expanded="true" />
+            <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1004#1005#0" expanded="true" />
+            <element signature="e#1042#1043#0" expanded="true" />
+            <element signature="e#1072#1073#0" expanded="true" />
+            <element signature="e#1105#1106#0" expanded="true" />
+            <element signature="e#1134#1135#0" expanded="true" />
+            <element signature="e#1178#1179#0" expanded="true" />
+            <element signature="e#1214#1215#0" expanded="true" />
+            <element signature="e#1257#1258#0" expanded="true" />
+            <element signature="e#1293#1294#0" expanded="true" />
+            <element signature="e#1354#1355#0" expanded="true" />
+            <element signature="e#1404#1405#0" expanded="true" />
+            <element signature="e#1445#1446#0" expanded="true" />
+            <element signature="e#1479#1480#0" expanded="true" />
+            <element signature="e#1536#1537#0" expanded="true" />
+            <element signature="e#1582#1583#0" expanded="true" />
+            <element signature="e#1608#1609#0" expanded="true" />
+            <element signature="e#1633#1634#0" expanded="true" />
+            <element signature="e#1666#1667#0" expanded="true" />
+            <element signature="e#1694#1695#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DAO/ElementDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="63">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DAO/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        <state relative-caret-position="147">
+          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/Sql2oElementDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/Sql2oListDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/ListDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/Sql2oUserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="43" column="36" lean-forward="true" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#260#261#0" expanded="false" />
+            <element signature="e#294#295#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="55" column="24" lean-forward="false" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Connection.java" />
+    <entry file="jar://$PROJECT_DIR$/lib/sql2o-1.5.4.jar!/org/sql2o/Connection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="290" column="0" lean-forward="false" selection-start-line="290" selection-start-column="0" selection-end-line="290" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/ListDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6d043851-875e-4284-9806-6cb7a5324660/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="11" lean-forward="true" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/freemarker.jar!/freemarker/template/Configuration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="1121" column="0" lean-forward="false" selection-start-line="1121" selection-start-column="0" selection-end-line="1121" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/index.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Status.java" />
+    <entry file="file://$PROJECT_DIR$/src/Model/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="55" column="24" lean-forward="false" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Role.java" />
+    <entry file="file://$PROJECT_DIR$/src/Model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="40" column="20" lean-forward="false" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/public/style.css" />
+    <entry file="file://$PROJECT_DIR$/src/templates/footer.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="40" lean-forward="true" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/list.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/Sql2oUserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#260#261#0" expanded="false" />
+            <element signature="e#294#295#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/script.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="155" lean-forward="false" selection-start-line="5" selection-start-column="155" selection-end-line="5" selection-end-column="155" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/Sql2oElementDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/Sql2oListDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="25" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Element.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="78" column="21" lean-forward="true" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+          <folding>
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+            <element signature="e#948#949#0" expanded="true" />
+            <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1004#1005#0" expanded="true" />
+            <element signature="e#1042#1043#0" expanded="true" />
+            <element signature="e#1072#1073#0" expanded="true" />
+            <element signature="e#1105#1106#0" expanded="true" />
+            <element signature="e#1134#1135#0" expanded="true" />
+            <element signature="e#1178#1179#0" expanded="true" />
+            <element signature="e#1214#1215#0" expanded="true" />
+            <element signature="e#1257#1258#0" expanded="true" />
+            <element signature="e#1293#1294#0" expanded="true" />
+            <element signature="e#1354#1355#0" expanded="true" />
+            <element signature="e#1404#1405#0" expanded="true" />
+            <element signature="e#1445#1446#0" expanded="true" />
+            <element signature="e#1479#1480#0" expanded="true" />
+            <element signature="e#1536#1537#0" expanded="true" />
+            <element signature="e#1582#1583#0" expanded="true" />
+            <element signature="e#1608#1609#0" expanded="true" />
+            <element signature="e#1633#1634#0" expanded="true" />
+            <element signature="e#1666#1667#0" expanded="true" />
+            <element signature="e#1694#1695#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/httpclient-4.0.jar!/org/apache/http/impl/client/DefaultHttpClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="66" column="11" lean-forward="false" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="11" />
+          <folding>
+            <element signature="e#3012#3013#0" expanded="true" />
+            <element signature="e#3082#3083#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/httpclient-4.0.jar!/org/apache/http/impl/client/AbstractHttpClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="348" column="30" lean-forward="false" selection-start-line="348" selection-start-column="30" selection-end-line="348" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CreateRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Views.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="78" column="93" lean-forward="true" selection-start-line="78" selection-start-column="93" selection-end-line="78" selection-end-column="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAO/ElementDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TechnoWeb.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/index.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/menu.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="50" lean-forward="true" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="69" column="31" lean-forward="true" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/list-users.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/newuser.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="25" column="47" lean-forward="true" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>

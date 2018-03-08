@@ -5,6 +5,7 @@ import Model.Element;
 import java.util.ArrayList;
 
 public class List {
+    private int id;
     private String title;
     private String description;
     private ArrayList<Element> elements;
@@ -50,5 +51,13 @@ public class List {
 
     public void setUsers(ArrayList<User> users) {
         this.users = users;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

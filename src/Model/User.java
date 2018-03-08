@@ -1,45 +1,43 @@
 package Model;
 
-import Model.Role;
-
 public class User {
     private int id;
-    private String Name;
-    private String Firstname;
-    private Role role;
+    private String name;
+    private String firstname;
+    private String role;
 
 
     public User(){
 
     }
 
-    public User(String name, String firstname, Role role) {
-        Name = name;
-        Firstname = firstname;
+    public User(String name, String firstname, String role) {
+        this.name = name;
+        this.firstname = firstname;
         this.role = role;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public String getFirstname() {
-        return Firstname;
+        return firstname;
     }
 
     public void setFirstname(String firstname) {
-        Firstname = firstname;
+        this.firstname = firstname;
     }
 
-    public Role getRole() {
+    public String getRole() {
         return role;
     }
 
-    public void setRole(Role role) {
+    public void setRole(String role) {
         this.role = role;
     }
 
