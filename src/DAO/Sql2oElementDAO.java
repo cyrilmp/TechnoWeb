@@ -5,6 +5,7 @@ import org.sql2o.Connection;
 import org.sql2o.Sql2o;
 import org.sql2o.Sql2oException;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public class Sql2oElementDAO implements ElementDAO{
@@ -19,7 +20,15 @@ public class Sql2oElementDAO implements ElementDAO{
     public void add(Element element, int idList) {
         String sql ="INSERT INTO Element (title,description,tag,status,idList,creation_date,updating_date) VALUES (:title, :description,:tag,:status,:idList,:creation_date,:updating_date)";
         try(Connection con = sql2o.open()){
-            int id=(int) con.createQuery(sql,true).bind(element).executeUpdate().getKey();
+            int id=(int) con.createQuery(sql)
+                    .addParameter("title", element.getTitle())
+                    .addParameter("description", element.getDescription())
+                    .addParameter("tag", element.getTag())
+                    .addParameter("status", element.getStatus())
+                    .addParameter("updating_date", LocalDate.now())
+                    .addParameter("creation_date", LocalDate.now())
+                    .addParameter("idList", idList)
+                    .executeUpdate().getKey();
             element.setId(id);
         }catch (Sql2oException ex){
             System.out.println(ex);
@@ -29,26 +38,58 @@ public class Sql2oElementDAO implements ElementDAO{
 
     @Override
     public List<Element> getAll() {
-        return null;
+        try(Connection con = sql2o.open()){
+            return con.createQuery("SELECT * FROM element")
+                    .executeAndFetch(Element.class);
+        }
     }
 
     @Override
     public Element findById(int id) {
-        return null;
+        try(Connection con = sql2o.open()){
+            return con.createQuery("SELECT * FROM element WHERE id = :id")
+                    .addParameter("id", id)
+                    .executeAndFetchFirst(Element.class);
+        }
     }
 
     @Override
     public List<Element> findByIdList(int idList) {
-        return null;
+        try(Connection con = sql2o.open()){
+            return con.createQuery("SELECT * FROM element WHERE idList = :idList")
+                    .addParameter("idList", idList)
+                    .executeAndFetch(Element.class);
+        }
     }
 
     @Override
-    public void update(int id, String title, String description) {
-
+    public void update(int id, String title, String description, String tag, String status, LocalDate creation_date, LocalDate updating_date) {
+        String sql = "UPDATE element SET (title, description,tag,status,updating_date) = (:title, :description,:tag,:status,:updating_date) WHERE id=:id";
+        try(Connection con = sql2o.open()){
+            con.createQuery(sql)
+                    .addParameter("title", title)
+                    .addParameter("description", description)
+                    .addParameter("tag", tag)
+                    .addParameter("status", status)
+                    .addParameter("updating_date", LocalDate.now())
+                    .addParameter("id", id)
+                    .executeUpdate();
+        } catch (Sql2oException ex) {
+            System.out.println(ex);
+            System.out.println("error message");
+        }
     }
 
     @Override
     public void deleteById(int id) {
-
+        String sql = "DELETE from element WHERE id = :id";
+        try (Connection con = sql2o.open()) {
+            con.createQuery(sql)
+                    .addParameter("id", id)
+                    .executeUpdate();
+        } catch (Sql2oException ex){
+            System.out.println(ex);
+            System.out.println("error message");
+        }
     }
 }

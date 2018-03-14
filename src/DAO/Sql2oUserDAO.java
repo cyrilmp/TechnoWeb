@@ -61,6 +61,16 @@ public class Sql2oUserDAO implements UserDAO{
     }
 
     @Override
+    public User findByNameAndFirstName(String name, String firstname) {
+        try(Connection con = sql2o.open()){
+            return con.createQuery("SELECT * FROM user WHERE name = :name AND firstname = :firstname")
+                    .addParameter("name", name)
+                    .addParameter("firstname", firstname)
+                    .executeAndFetchFirst(User.class);
+        }
+    }
+
+    @Override
     public void deleteById(int id) {
         String sql = "DELETE from user WHERE id = :id";
         try (Connection con = sql2o.open()) {

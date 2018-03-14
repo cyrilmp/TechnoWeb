@@ -1,6 +1,7 @@
 <div class="list">
     <form >
-        <span>titre</span>
+        <#if list??>
+        <span>${list.title}</span>
         <table>
             <tr>
                 <td><input type="checkbox" name="element"></td>
@@ -10,5 +11,6 @@
         <input type="button" value="Valider"/>
         <input type="button" value="Annuler"/>
         <input type="button" value="Supprimer"/>
+        </#if>
     </form>
 </div>

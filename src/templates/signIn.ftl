@@ -28,16 +28,13 @@
         </div>
     </div>
     <div class="row">
-        <#if lists??>
-            <#list lists as list>
-                <div class="col-md-6 portfolio-item">
-                    <#include "/templates/list.ftl">
-                </div>
-            </#list>
-            <div class="col-md-6 portfolio-item">
-                <#include "/templates/list.ftl">
-            </div>
-        </#if>
+        <form name="signIn" method="post" onsubmit="validateForm()" action="http://127.0.0.1:4567/index">
+            <p id="error"></p>
+            Nom : <input type="text" name="name"/>
+            Prénom : <input type="text" name="firstname"/>
+            <input type="submit" value="Valider">
+            <input type="reset" value="Reset">
+        </form>
     </div>
     <!-- /.row -->
     <!-- Pagination -->
@@ -83,6 +80,7 @@
 
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
 
 </body>
 

@@ -12,13 +12,15 @@ public class List {
     private ArrayList<User> users;
 
     public List() {
+        elements = new ArrayList<>();
+        users= new ArrayList<>();
     }
 
-    public List(String title, String description, ArrayList<Element> elements, ArrayList<User> users) {
+    public List(String title, String description) {
         this.title = title;
         this.description = description;
-        this.elements = elements;
-        this.users = users;
+        elements = new ArrayList<>();
+        users= new ArrayList<>();
     }
 
     public String getTitle() {
@@ -60,4 +62,5 @@ public class List {
     public void setId(int id) {
         this.id = id;
     }
+
 }

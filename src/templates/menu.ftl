@@ -20,8 +20,16 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#">Contact</a>
-                </li>
+                <#if name??>
+                    <li>Hello ${name}</li>
+                    <li><a href="/sign-out">Sign out</a></li>
+                <#else>
+                    <li>
+                        <a href="/sign-in">Sign In</a>
+                    </li>
+                    <li>
+                        <a href="/sign-up">Sign Up</a>
+                    </li>
+                </#if>
             </ul>
         </div>

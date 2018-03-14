@@ -1,4 +1,6 @@
 import DAO.*;
+import Model.Element;
+import Model.List;
 import com.google.gson.Gson;
 import Model.User;
 import freemarker.template.TemplateException;
@@ -6,10 +8,13 @@ import org.sql2o.Connection;
 import org.sql2o.Sql2o;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import static spark.Spark.*;
 
 public class App {
+
+    private static User userConnected;
 
     public static void main(String[] args) throws IOException, TemplateException {
         staticFileLocation("/public");
@@ -55,7 +60,6 @@ public class App {
         });
 
         post("/user/add", "application/json", (req, res) -> {
-            //User user = gson.fromJson(req.body(), User.class);
             String name = req.queryParams("name");
             String firstname = req.queryParams("firstname");
             String role = req.queryParams("role");
@@ -63,7 +67,35 @@ public class App {
             userDAO.add(user);
             res.status(201);
             res.type("application/json");
-            return "The following was added to the API\n\r" + gson.toJson(user);
+            return gson.toJson(user);
+        });
+        post("/signIn", "application/json", (req, res) -> {
+            String name = req.queryParams("name");
+            String firstname = req.queryParams("firstname");
+            userConnected = userDAO.findByNameAndFirstName(name,firstname);
+            if(userConnected!=null){
+                res.status(200);
+                res.type("application/json");
+                return gson.toJson(userConnected);
+            }else{
+                res.status(401);
+                res.type("application/json");
+                return gson.toJson(userConnected);
+            }
+        });
+        post("/list/add", "application/json", (req, res) -> {
+            String title = req.queryParams("title");
+            String description = req.queryParams("description");
+            //ArrayList<Element> elementList= req.queryParams("element");
+            List list = new List(title,description);
+            list.getUsers().add(new User("admin","admin","Admin"));
+            /*for(int i=0;i<elementList;i++){
+
+            }*/
+            listDAO.add(list);
+            res.status(201);
+            res.type("application/json");
+            return gson.toJson(list);
         });
     }
 
@@ -72,6 +104,8 @@ public class App {
         get("/index", (req, res) -> views.index());
         get("/newuser", (req, res) -> views.user());
         get("/list-users", (req, res) -> views.list_users());
+        get("/newlist", (req, res) -> views.newlist());
+        get("/sign-in", (req, res) -> views.signIn());
 
     }
 

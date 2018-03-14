@@ -25,6 +25,8 @@ public class Views {
     }
 
     public String index() throws IOException,TemplateException {
+        Gson gson = new Gson();
+        Type listType = new TypeToken<List<User>>(){}.getType();
         String text = "";
         Configuration cfg = new Configuration(new Version("2.3.23"));
 
@@ -35,6 +37,7 @@ public class Views {
 
         Map<String, Object> templateData = new HashMap<>();
         templateData.put("title", "Keep List");
+        templateData.put("lists", gson.fromJson(CreateRequest.get("/lists").body, listType));
 
 
         try (StringWriter out = new StringWriter()) {
@@ -85,6 +88,44 @@ public class Views {
             out.flush();
         } catch (TemplateException e) {
             e.printStackTrace();
+        }
+        return text;
+    }
+
+    public String newlist() throws IOException,TemplateException {
+        String text = "";
+        Configuration cfg = new Configuration(new Version("2.3.23"));
+
+        cfg.setClassForTemplateLoading(Views.class, "/");
+        cfg.setDefaultEncoding("UTF-8");
+
+        Template template = cfg.getTemplate("templates/newlist.ftl");
+
+        Map<String, Object> templateData = new HashMap<>();
+
+        try (StringWriter out = new StringWriter()) {
+            template.process(templateData, out);
+            text = text+ out.getBuffer().toString();
+            out.flush();
+        }
+        return text;
+    }
+
+    public String signIn() throws IOException,TemplateException {
+        String text = "";
+        Configuration cfg = new Configuration(new Version("2.3.23"));
+
+        cfg.setClassForTemplateLoading(Views.class, "/");
+        cfg.setDefaultEncoding("UTF-8");
+
+        Template template = cfg.getTemplate("templates/signIn.ftl");
+
+        Map<String, Object> templateData = new HashMap<>();
+
+        try (StringWriter out = new StringWriter()) {
+            template.process(templateData, out);
+            text = text+ out.getBuffer().toString();
+            out.flush();
         }
         return text;
     }
