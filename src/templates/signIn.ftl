@@ -28,7 +28,7 @@
         </div>
     </div>
     <div class="row">
-        <form name="signIn" method="post" onsubmit="validateForm()" action="http://127.0.0.1:4567/index">
+        <form id="form_signIn" name="signIn" method="post">
             <p id="error"></p>
             Nom : <input type="text" name="name"/>
             Prénom : <input type="text" name="firstname"/>

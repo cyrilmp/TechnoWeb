@@ -26,9 +26,11 @@
     <div class="row">
         <table>
            <#list users as user>
-                <tr>
-                    <td>${user.name}</td><td>${user.firstname}</td><td>${user.role}</td><td><input type="button" value="Modifier"></td>
-                </tr>
+               <#if user??>
+                    <tr>
+                        <td>${user.name}</td><td>${user.firstname}</td><td>${user.role}</td><td><input type="button" value="Modifier"></td>
+                    </tr>
+                </#if>
            </#list>
         </table>
     </div>

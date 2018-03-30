@@ -8,6 +8,9 @@ import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
 import freemarker.template.Version;
+import spark.Request;
+import spark.Response;
+import spark.Session;
 
 import java.io.IOException;
 import java.io.StringWriter;
@@ -21,12 +24,11 @@ import java.util.Map;
 public class Views {
 
     public Views() {
-
     }
 
-    public String index() throws IOException,TemplateException {
+    public String index(Request req, Response res) throws IOException,TemplateException {
         Gson gson = new Gson();
-        Type listType = new TypeToken<List<User>>(){}.getType();
+        Type listType = new TypeToken<List<Model.List>>(){}.getType();
         String text = "";
         Configuration cfg = new Configuration(new Version("2.3.23"));
 
@@ -37,8 +39,10 @@ public class Views {
 
         Map<String, Object> templateData = new HashMap<>();
         templateData.put("title", "Keep List");
-        templateData.put("lists", gson.fromJson(CreateRequest.get("/lists").body, listType));
-
+        List<Model.List> lists = gson.fromJson(CreateRequest.get("/lists").body, listType);
+        templateData.put("lists", lists);
+        Session session = req.session();
+        templateData.put("userConnected", session.attribute("userConnected"));
 
         try (StringWriter out = new StringWriter()) {
             template.process(templateData, out);
@@ -58,7 +62,7 @@ public class Views {
         Template template = cfg.getTemplate("templates/newuser.ftl");
 
         Map<String, Object> templateData = new HashMap<>();
-
+        templateData.put("userConnected", App.userConnected);
         try (StringWriter out = new StringWriter()) {
             template.process(templateData, out);
             text = text+ out.getBuffer().toString();
@@ -79,9 +83,9 @@ public class Views {
         Template template = cfg.getTemplate("templates/list-users.ftl");
 
         Map<String, Object> templateData = new HashMap<>();
-        templateData.put("users", gson.fromJson(CreateRequest.get("/users").body, listType));
-
-
+        List<User> list = (List<User>) gson.fromJson(CreateRequest.get("/users").body, listType);
+        templateData.put("users", list);
+        templateData.put("userConnected", App.userConnected);
         try (StringWriter out = new StringWriter()) {
             template.process(templateData, out);
             text = text+ out.getBuffer().toString();
@@ -102,7 +106,7 @@ public class Views {
         Template template = cfg.getTemplate("templates/newlist.ftl");
 
         Map<String, Object> templateData = new HashMap<>();
-
+        templateData.put("userConnected", App.userConnected);
         try (StringWriter out = new StringWriter()) {
             template.process(templateData, out);
             text = text+ out.getBuffer().toString();

@@ -63,7 +63,7 @@ public class Sql2oElementDAO implements ElementDAO{
     }
 
     @Override
-    public void update(int id, String title, String description, String tag, String status, LocalDate creation_date, LocalDate updating_date) {
+    public void update(int id, String title, String description, String tag, String status, LocalDate updating_date) {
         String sql = "UPDATE element SET (title, description,tag,status,updating_date) = (:title, :description,:tag,:status,:updating_date) WHERE id=:id";
         try(Connection con = sql2o.open()){
             con.createQuery(sql)

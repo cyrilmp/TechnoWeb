@@ -20,8 +20,8 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <#if name??>
-                    <li>Hello ${name}</li>
+                <#if userConnected??>
+                    <li><a>Hello ${userConnected}</a></li>
                     <li><a href="/sign-out">Sign out</a></li>
                 <#else>
                     <li>
