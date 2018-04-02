@@ -15,7 +15,7 @@ CREATE TABLE Element(id int primary key AUTO_INCREMENT,
 					creation_date DATE NOT NULL,
 					updating_date DATE NOT NULL, 
 					idList int NOT NULL,
-					CONSTRAINT chk_status CHECK (status IN (0,1,2)), 
+					CONSTRAINT chk_status CHECK (status IN (0,1,2)),
 					FOREIGN KEY (idList) REFERENCES public.List(id)
 );
 CREATE TABLE User(id int primary key AUTO_INCREMENT, 

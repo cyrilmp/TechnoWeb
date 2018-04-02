@@ -10,6 +10,7 @@ import spark.Session;
 
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.sql.Date;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -78,7 +79,7 @@ public class App {
             String description = req.queryParams("description");
             String tag = req.queryParams("tag");
             String status = req.queryParams("status");
-            LocalDate updating_date = LocalDate.now();
+            Date updating_date = Date.valueOf(LocalDate.now());
             elementDAO.update(id,title,description,tag,status,updating_date);
             return gson.toJson(elementDAO.findById(id));
         });
@@ -115,8 +116,8 @@ public class App {
             String title = req.queryParams("title");
             String description = req.queryParams("description");
             String tag = req.queryParams("tag");
-            String status = req.queryParams("status");
-            Element element = new Element(title,description,tag,status,LocalDate.now(),null);
+            int status = Integer.parseInt(req.queryParams("status"));
+            Element element = new Element(title,description,tag,status, Date.valueOf(LocalDate.now()),null);
             elementDAO.add(element,idList);
             res.status(201);
             res.type("application/json");

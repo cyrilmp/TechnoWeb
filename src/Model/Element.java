@@ -1,5 +1,6 @@
 package Model;
 
+import java.sql.Date;
 import java.time.LocalDate;
 
 public class Element {
@@ -7,20 +8,32 @@ public class Element {
     private String title;
     private String description;
     private String tag;
-    private String status;
-    private LocalDate creation_date;
-    private LocalDate update_date;
+    private int status;
+    private Date creation_date;
+    private Date updating_date;
+    private int idList;
 
     public Element() {
     }
 
-    public Element(String title, String description, String tag, String status, LocalDate creation_date, LocalDate update_date) {
+    public Element(String title, String description, String tag, int status, Date creation_date, Date updating_date) {
         this.title = title;
         this.description = description;
         this.tag = tag;
         this.status = status;
         this.creation_date = creation_date;
-        this.update_date = update_date;
+        this.updating_date = updating_date;
+    }
+
+    public Element(int id,String title, String description, String tag, int status, Date creation_date, Date updating_date, int idList) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.tag = tag;
+        this.status = status;
+        this.creation_date = creation_date;
+        this.updating_date = updating_date;
+        this.idList=idList;
     }
 
     public String getTitle() {
@@ -47,28 +60,28 @@ public class Element {
         this.tag = tag;
     }
 
-    public String getStatus() {
+    public int getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(int status) {
         this.status = status;
     }
 
-    public LocalDate getCreation_date() {
+    public Date getCreation_date() {
         return creation_date;
     }
 
-    public void setCreation_date(LocalDate creation_date) {
+    public void setCreation_date(Date creation_date) {
         this.creation_date = creation_date;
     }
 
-    public LocalDate getUpdate_date() {
-        return update_date;
+    public Date getUpdating_date() {
+        return updating_date;
     }
 
-    public void setUpdate_date(LocalDate update_date) {
-        this.update_date = update_date;
+    public void setUpdating_date(Date updating_date) {
+        this.updating_date = updating_date;
     }
 
     public int getId() {
@@ -77,5 +90,13 @@ public class Element {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getIdList() {
+        return idList;
+    }
+
+    public void setIdList(int idList) {
+        this.idList = idList;
     }
 }

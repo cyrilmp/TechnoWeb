@@ -1,5 +1,6 @@
 package DAO;
 
+import Model.Element;
 import Model.List;
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
@@ -29,8 +30,13 @@ public class Sql2oListDAO implements ListDAO{
     @Override
     public java.util.List<List> getAll() {
         try(Connection con = sql2o.open()){
-            return con.createQuery("SELECT * FROM list")
-                    .executeAndFetch(List.class);
+            java.util.List<List> lists = con.createQuery("SELECT * FROM list").executeAndFetch(List.class);
+            System.out.println("Nb d'element" +lists.size());
+            for(int i=0;i<lists.size();i++){
+                java.util.List<Element> elements = con.createQuery("SELECT * FROM element where idList="+lists.get(i).getId()).executeAndFetch(Element.class);
+                lists.get(i).setElements(elements);
+            }
+            return lists;
         }
     }
 

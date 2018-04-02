@@ -5,6 +5,7 @@ import org.sql2o.Connection;
 import org.sql2o.Sql2o;
 import org.sql2o.Sql2oException;
 
+import java.sql.Date;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -63,7 +64,7 @@ public class Sql2oElementDAO implements ElementDAO{
     }
 
     @Override
-    public void update(int id, String title, String description, String tag, String status, LocalDate updating_date) {
+    public void update(int id, String title, String description, String tag, String status, Date updating_date) {
         String sql = "UPDATE element SET (title, description,tag,status,updating_date) = (:title, :description,:tag,:status,:updating_date) WHERE id=:id";
         try(Connection con = sql2o.open()){
             con.createQuery(sql)
@@ -71,7 +72,7 @@ public class Sql2oElementDAO implements ElementDAO{
                     .addParameter("description", description)
                     .addParameter("tag", tag)
                     .addParameter("status", status)
-                    .addParameter("updating_date", LocalDate.now())
+                    .addParameter("updating_date", Date.valueOf(LocalDate.now()))
                     .addParameter("id", id)
                     .executeUpdate();
         } catch (Sql2oException ex) {

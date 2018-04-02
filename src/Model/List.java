@@ -8,8 +8,8 @@ public class List {
     private int id;
     private String title;
     private String description;
-    private ArrayList<Element> elements;
-    private ArrayList<User> users;
+    private java.util.List<Element> elements;
+    private java.util.List<User> users;
 
     public List() {
         elements = new ArrayList<>();
@@ -39,15 +39,15 @@ public class List {
         this.description = description;
     }
 
-    public ArrayList<Element> getElements() {
+    public java.util.List<Element> getElements() {
         return elements;
     }
 
-    public void setElements(ArrayList<Element> elements) {
+    public void setElements(java.util.List<Element> elements) {
         this.elements = elements;
     }
 
-    public ArrayList<User> getUsers() {
+    public java.util.List<User> getUsers() {
         return users;
     }
 
