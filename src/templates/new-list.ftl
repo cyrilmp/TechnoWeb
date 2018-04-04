@@ -18,22 +18,14 @@
     <div class="row">
         <div class="col-lg-12">
             <h1 class="page-header">Creation d'une nouvelle liste
-                <small>User</small>
+                <small>List</small>
             </h1>
         </div>
     </div>
     <div class="row">
-        <form action="/list/add" method="post">
-            <p>Titre: <input type="text" name="title"></p>
-            <p>Description: <input type="text" name="description"></p>
-            <table>
-                <tr>
-                    <td>title</td><td>description</td><td>Status</td><td>Tag</td>
-                </tr>
-                <tr>
-                    <td><input type="text" name="title" /></td><td><input type="text" name="description" /></td><td><input type="text" name="tag" /></td><td><input type="text" name="status" /></td>
-                </tr>
-            </table>
+        <form id ="add_list">
+            <p>Titre: <input type="text" name="title" required></p>
+            <p>Description: <input type="text" name="description" required></p>
             <p>
                 <input type="submit" value="Submit">
                 <input type="reset" value="Reset">
@@ -47,5 +39,6 @@
 </footer>
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

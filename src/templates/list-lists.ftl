@@ -17,21 +17,21 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Liste des utilisateurs
-                <small>User</small>
+            <h1 class="page-header">Liste des listes
+                <small>List</small>
             </h1>
         </div>
-        <a href="/new-user"><button>Ajouter un utilisateur</button></a>
+        <a href="/new-list"><button>Ajouter une liste</button></a>
     </div><br>
     <div class="row">
         <table>
             <tr height="30px">
-                <th width="100px" style="border-style: solid;text-align: center;">Name</th><th width="100px" style="border-style: solid;text-align: center;">Firstname</th><th style="border-style: solid;text-align: center;" width="100px">Role</th><th style="border-style: solid;text-align: center;" width="100px">Modifier</th><th style="border-style: solid;text-align: center;" width="100px">Supprimer</th>
+                <th width="100px" style="border-style: solid;text-align: center;">Title</th><th width="100px" style="border-style: solid;text-align: center;">Description</th><th style="border-style: solid;text-align: center;" width="100px">Modifier</th><th style="border-style: solid;text-align: center;" width="100px">Supprimer</th>
             </tr>
-           <#list users as user>
-               <#if user??>
+           <#list lists as list>
+               <#if list??>
                     <tr style="border-style: solid;" height="30px">
-                        <td>${user.name}</td><td>${user.firstname}</td><td>${user.role}</td><td style="text-align: center;"><button id="${user.id}" class="modifyUser">Modifier</button></td><td style="text-align: center;"><button id="${user.id}" class="deleteUser">Supprimer</button></td>
+                        <td>${list.title}</td><td>${list.description}</td><td style="text-align: center;"><button id="${list.id}" class="modifyList">Modifier</button></td><td style="text-align: center;"><button id="${list.id}" class="deleteList">Supprimer</button></td>
                     </tr>
                 </#if>
            </#list>

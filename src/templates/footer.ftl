@@ -1,5 +1,5 @@
 <div class="copyright">
     <div class="container">
-        <p>Copyright &copy; MPC 2018</p>
+        <p>Copyright &copy; MPC & TJ 2018</p>
     </div>
 </div>

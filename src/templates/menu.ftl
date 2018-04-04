@@ -16,7 +16,10 @@
                     <a href="/list-users">User</a>
                 </li>
                 <li>
-                    <a href="#">List</a>
+                    <a href="/list-lists">List</a>
+                </li>
+                <li>
+                    <a href="/list-elements">Element</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">

@@ -72,7 +72,16 @@ public class Sql2oUserDAO implements UserDAO{
 
     @Override
     public void deleteById(int id) {
-        String sql = "DELETE from user WHERE id = :id";
+        String sql = "DELETE from listuser WHERE iduser = :id";
+        try (Connection con = sql2o.open()) {
+            con.createQuery(sql)
+                    .addParameter("id", id)
+                    .executeUpdate();
+        } catch (Sql2oException ex){
+            System.out.println(ex);
+            System.out.println("error message");
+        }
+        sql = "DELETE from user WHERE id = :id";
         try (Connection con = sql2o.open()) {
             con.createQuery(sql)
                     .addParameter("id", id)

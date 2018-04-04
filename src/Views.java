@@ -1,6 +1,5 @@
 
-import DAO.Sql2oUserDAO;
-import DAO.UserDAO;
+import Model.Element;
 import Model.User;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -15,8 +14,6 @@ import spark.Session;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.lang.reflect.Type;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -52,17 +49,84 @@ public class Views {
         return text;
     }
 
-    public String user() throws IOException,TemplateException {
+    public String new_user() throws IOException,TemplateException {
         String text = "";
         Configuration cfg = new Configuration(new Version("2.3.23"));
 
         cfg.setClassForTemplateLoading(Views.class, "/");
         cfg.setDefaultEncoding("UTF-8");
 
-        Template template = cfg.getTemplate("templates/newuser.ftl");
+        Template template = cfg.getTemplate("templates/new-user.ftl");
 
         Map<String, Object> templateData = new HashMap<>();
         templateData.put("userConnected", App.userConnected);
+        try (StringWriter out = new StringWriter()) {
+            template.process(templateData, out);
+            text = text+ out.getBuffer().toString();
+            out.flush();
+        }
+        return text;
+    }
+
+    public String modify_user(int id) throws IOException,TemplateException {
+        Gson gson = new Gson();
+        String text = "";
+        Configuration cfg = new Configuration(new Version("2.3.23"));
+        Type listType = new TypeToken<User>(){}.getType();
+        cfg.setClassForTemplateLoading(Views.class, "/");
+        cfg.setDefaultEncoding("UTF-8");
+
+        Template template = cfg.getTemplate("templates/modify-user.ftl");
+
+        Map<String, Object> templateData = new HashMap<>();
+        User user = gson.fromJson(CreateRequest.get("/user/"+id).body, listType);
+        templateData.put("user",user);
+        try (StringWriter out = new StringWriter()) {
+            template.process(templateData, out);
+            text = text+ out.getBuffer().toString();
+            out.flush();
+        }
+        return text;
+    }
+    public String modify_list(int id) throws IOException,TemplateException {//////TO DO
+        Gson gson = new Gson();
+        String text = "";
+        Configuration cfg = new Configuration(new Version("2.3.23"));
+        Type listType = new TypeToken<Model.List>(){}.getType();
+        Model.List list = gson.fromJson(CreateRequest.get("/list/"+id).body, listType);
+        cfg.setClassForTemplateLoading(Views.class, "/");
+        cfg.setDefaultEncoding("UTF-8");
+
+        Template template = cfg.getTemplate("templates/modify-list.ftl");
+
+        Map<String, Object> templateData = new HashMap<>();
+
+        templateData.put("list",list);
+        try (StringWriter out = new StringWriter()) {
+            template.process(templateData, out);
+            text = text+ out.getBuffer().toString();
+            out.flush();
+        }
+        return text;
+    }
+
+    public String modify_element(int id) throws IOException,TemplateException {
+        Gson gson = new Gson();
+        String text = "";
+        Configuration cfg = new Configuration(new Version("2.3.23"));
+        Type listType = new TypeToken<Element>(){}.getType();
+        Element element = gson.fromJson(CreateRequest.get("/element/"+id).body, listType);
+        listType = new TypeToken<List<Model.List>>(){}.getType();
+        List<Model.List> list = (List<Model.List>) gson.fromJson(CreateRequest.get("/lists").body, listType);
+        cfg.setClassForTemplateLoading(Views.class, "/");
+        cfg.setDefaultEncoding("UTF-8");
+
+        Template template = cfg.getTemplate("templates/modify-element.ftl");
+
+        Map<String, Object> templateData = new HashMap<>();
+
+        templateData.put("element",element);
+        templateData.put("lists",list);
         try (StringWriter out = new StringWriter()) {
             template.process(templateData, out);
             text = text+ out.getBuffer().toString();
@@ -96,17 +160,86 @@ public class Views {
         return text;
     }
 
-    public String newlist() throws IOException,TemplateException {
+    public String list_lists() throws IOException {
+        Gson gson = new Gson();
+        Type listType = new TypeToken<List<Model.List>>(){}.getType();
         String text = "";
         Configuration cfg = new Configuration(new Version("2.3.23"));
 
         cfg.setClassForTemplateLoading(Views.class, "/");
         cfg.setDefaultEncoding("UTF-8");
 
-        Template template = cfg.getTemplate("templates/newlist.ftl");
+        Template template = cfg.getTemplate("templates/list-lists.ftl");
+
+        Map<String, Object> templateData = new HashMap<>();
+        List<Model.List> list = (List<Model.List>) gson.fromJson(CreateRequest.get("/lists").body, listType);
+        templateData.put("lists", list);
+        try (StringWriter out = new StringWriter()) {
+            template.process(templateData, out);
+            text = text+ out.getBuffer().toString();
+            out.flush();
+        } catch (TemplateException e) {
+            e.printStackTrace();
+        }
+        return text;
+    }
+
+    public String list_elements() throws IOException {
+        Gson gson = new Gson();
+        Type listType = new TypeToken<List<Element>>(){}.getType();
+        String text = "";
+        Configuration cfg = new Configuration(new Version("2.3.23"));
+
+        cfg.setClassForTemplateLoading(Views.class, "/");
+        cfg.setDefaultEncoding("UTF-8");
+
+        Template template = cfg.getTemplate("templates/list-elements.ftl");
+
+        Map<String, Object> templateData = new HashMap<>();
+        List<Element> list = (List<Element>) gson.fromJson(CreateRequest.get("/elements").body, listType);
+        templateData.put("elements", list);
+        try (StringWriter out = new StringWriter()) {
+            template.process(templateData, out);
+            text = text+ out.getBuffer().toString();
+            out.flush();
+        } catch (TemplateException e) {
+            e.printStackTrace();
+        }
+        return text;
+    }
+
+    public String new_list() throws IOException,TemplateException {
+        String text = "";
+        Configuration cfg = new Configuration(new Version("2.3.23"));
+
+        cfg.setClassForTemplateLoading(Views.class, "/");
+        cfg.setDefaultEncoding("UTF-8");
+
+        Template template = cfg.getTemplate("templates/new-list.ftl");
 
         Map<String, Object> templateData = new HashMap<>();
         templateData.put("userConnected", App.userConnected);
+        try (StringWriter out = new StringWriter()) {
+            template.process(templateData, out);
+            text = text+ out.getBuffer().toString();
+            out.flush();
+        }
+        return text;
+    }
+
+    public String new_element() throws IOException,TemplateException {
+        Gson gson = new Gson();
+        String text = "";
+        Type listType = new TypeToken<List<Model.List>>(){}.getType();
+        Configuration cfg = new Configuration(new Version("2.3.23"));
+
+        cfg.setClassForTemplateLoading(Views.class, "/");
+        cfg.setDefaultEncoding("UTF-8");
+
+        Template template = cfg.getTemplate("templates/new-element.ftl");
+        List<Model.List> list = (List<Model.List>) gson.fromJson(CreateRequest.get("/lists").body, listType);
+        Map<String, Object> templateData = new HashMap<>();
+        templateData.put("lists", list);
         try (StringWriter out = new StringWriter()) {
             template.process(templateData, out);
             text = text+ out.getBuffer().toString();

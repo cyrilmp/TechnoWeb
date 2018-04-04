@@ -23,18 +23,29 @@
         </div>
     </div>
     <div class="row">
-        <form action="/user/add" method="post">
-            <p>Nom: <input type="text" name="name"></p>
-            <p>Prenom: <input type="text" name="firstname"></p>
-            <p>Role:
-                <select name="role">
-                    <option value="admin">Admin</option>
-                    <option value="user">User</option>
-                </select>
-            <p>
-                <input type="submit" value="Submit">
-                <input type="reset" value="Reset">
-            </p>
+        <form id ="add_user">
+            <table>
+                <tr>
+                    <td>Nom: </td>
+                    <td><input type="text" name="name" required></td>
+                </tr>
+                <tr>
+                    <td>Prenom: </td>
+                    <td><input type="text" name="firstname" required></td></tr>
+                <tr>
+                    <td>Role:</td>
+                    <td>
+                    <select name="role">
+                    <option value="Administrateur">Admin</option>
+                    <option value="Utilisateur">User</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit"></td>
+                    <td><input type="reset" value="Reset"></td>
+                </tr>
+            </table>
         </form>
     </div>
 
@@ -44,5 +55,6 @@
 </footer>
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

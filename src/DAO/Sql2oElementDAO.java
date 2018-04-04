@@ -64,13 +64,29 @@ public class Sql2oElementDAO implements ElementDAO{
     }
 
     @Override
-    public void update(int id, String title, String description, String tag, String status, Date updating_date) {
-        String sql = "UPDATE element SET (title, description,tag,status,updating_date) = (:title, :description,:tag,:status,:updating_date) WHERE id=:id";
+    public void update(int id, String title, String description, String tag, String status, Date updating_date, int idList) {
+        String sql = "UPDATE element SET (title, description,tag,status,updating_date,idList) = (:title, :description,:tag,:status,:updating_date,:idList) WHERE id=:id";
         try(Connection con = sql2o.open()){
             con.createQuery(sql)
                     .addParameter("title", title)
                     .addParameter("description", description)
                     .addParameter("tag", tag)
+                    .addParameter("status", status)
+                    .addParameter("updating_date", Date.valueOf(LocalDate.now()))
+                    .addParameter("id", id)
+                    .addParameter("idList", idList)
+                    .executeUpdate();
+        } catch (Sql2oException ex) {
+            System.out.println(ex);
+            System.out.println("error message");
+        }
+    }
+
+    @Override
+    public void update(int id, String status, Date updating_date) {
+        String sql = "UPDATE element SET (status,updating_date) = (:status,:updating_date) WHERE id=:id";
+        try(Connection con = sql2o.open()){
+            con.createQuery(sql)
                     .addParameter("status", status)
                     .addParameter("updating_date", Date.valueOf(LocalDate.now()))
                     .addParameter("id", id)

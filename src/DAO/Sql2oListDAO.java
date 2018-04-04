@@ -31,7 +31,6 @@ public class Sql2oListDAO implements ListDAO{
     public java.util.List<List> getAll() {
         try(Connection con = sql2o.open()){
             java.util.List<List> lists = con.createQuery("SELECT * FROM list").executeAndFetch(List.class);
-            System.out.println("Nb d'element" +lists.size());
             for(int i=0;i<lists.size();i++){
                 java.util.List<Element> elements = con.createQuery("SELECT * FROM element where idList="+lists.get(i).getId()).executeAndFetch(Element.class);
                 lists.get(i).setElements(elements);
@@ -75,7 +74,16 @@ public class Sql2oListDAO implements ListDAO{
 
     @Override
     public void deleteById(int id) {
-        String sql = "DELETE from list WHERE id = :id";
+        String sql = "DELETE from listuser WHERE idlist = :id";
+        try (Connection con = sql2o.open()) {
+            con.createQuery(sql)
+                    .addParameter("id", id)
+                    .executeUpdate();
+        } catch (Sql2oException ex){
+            System.out.println(ex);
+            System.out.println("error message");
+        }
+        sql = "DELETE from list WHERE id = :id";
         try (Connection con = sql2o.open()) {
             con.createQuery(sql)
                     .addParameter("id", id)
