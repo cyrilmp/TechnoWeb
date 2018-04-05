@@ -30,48 +30,13 @@
     <div class="row">
         <#if lists??>
             <#list lists as list>
-                <div class="col-md-6 portfolio-item">
-                    <#include "/templates/list.ftl">
-                </div>
+                    <div class="col-md-6 portfolio-item">
+                        <#include "/templates/list.ftl">
+                    </div>
             </#list>
-            <div class="col-md-6 portfolio-item">
-                <#include "/templates/list.ftl">
-            </div>
         </#if>
     </div>
-    <!-- /.row -->
-    <!-- Pagination -->
-    <div class="row text-center">
-        <div class="col-lg-12">
-            <ul class="pagination">
-                <li>
-                    <a href="#">&laquo;</a>
-                </li>
-                <li class="active">
-                    <a href="#">1</a>
-                </li>
-                <li>
-                    <a href="#">2</a>
-                </li>
-                <li>
-                    <a href="#">3</a>
-                </li>
-                <li>
-                    <a href="#">4</a>
-                </li>
-                <li>
-                    <a href="#">5</a>
-                </li>
-                <li>
-                    <a href="#">&raquo;</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!-- /.row -->
-
 </div>
-<!-- /.container -->
 
 <footer>
 	<#include "/templates/footer.ftl">

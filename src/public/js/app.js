@@ -21,7 +21,7 @@ $(document).ready(function() {
         return false;
     });
 
-    $(".check_element").click(function(){
+    $(".status_element").click(function(){
         var id = $(this).attr('id');
         var status = $(this).val();
         if(status==0){
@@ -67,6 +67,21 @@ $(document).ready(function() {
             data: id,
             success: function(response){
                 window.location.href = "/list-lists";
+            },
+            error: function(error){
+                console.log("ERROR");
+            }
+        });
+    });
+
+    $(".deleteListToDo").click(function(){
+        var id = $(this).attr('id');
+        $.ajax({
+            type: "DELETE",
+            url: "/list/"+id,
+            data: id,
+            success: function(response){
+                window.location.href = "/";
             },
             error: function(error){
                 console.log("ERROR");
@@ -160,6 +175,25 @@ $(document).ready(function() {
         });
     });
 
+    $(".addElement").click(function(){
+        var idList = $(this).attr('id');
+        var title = $('.list'+idList+'[name="title_element"]').val();
+        var description = $('.list'+idList+'[name="desc_element"]').val();
+        var status = $('.list'+idList+'[name="status"]').val();
+        var tag = $('.list'+idList+'[name="tag_element"]').val();
+        $.ajax({
+            type: "POST",
+            url: "/element/",
+            data: "idList=" + idList +"&title=" + title + "&description=" + description+"&status="+status+"&tag="+tag,
+            success: function(response) {
+                window.location.href = "/";
+            },
+            error: function(error) {
+                console.log("ERROR");
+            }
+        });
+    });
+
     $("#modify_user").submit(function(e){
         e.preventDefault();
         var id = document.forms["modify_user"]["id"].value;
@@ -218,7 +252,7 @@ $(document).ready(function() {
         });
     });
 
-    $(".deleteelement").click(function(){
+    $(".deletElement").click(function(){
         var id = $(this).attr('id');
         console.log("id"+id);
         $.ajax({
@@ -229,6 +263,26 @@ $(document).ready(function() {
                 window.location.href = "/";
             },
             error: function(error){
+                console.log("ERROR");
+            }
+        });
+    });
+    $(".modifElement").click(function(){
+        var id = $(this).attr('id');
+        var title = $('.'+id+'[name="title_element"]').val();
+        var description = $('.'+id+'[name="desc_element"]').val();
+        var status = $('.'+id+'[name="status_element"]').val();
+        var tag = $('.'+id+'[name="tag_element"]').val();
+        var idList = $('.'+id+'[name="idList_element"]').val();
+        $.ajax({
+            type: "PUT",
+            url: "/element/",
+            data: "id=" + id +"&idList=" + idList +"&title=" + title + "&description=" + description+"&status="+status+"&tag="+tag,
+            success: function(response) {
+                window.location.href = "/";
+                console.log("ok");
+            },
+            error: function(error) {
                 console.log("ERROR");
             }
         });

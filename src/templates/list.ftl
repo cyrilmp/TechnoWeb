@@ -1,11 +1,10 @@
-<div class="list">
+<div class="list" style="border-radius: 5px;border-style: solid;margin:30px;padding: 30px;">
     <form >
         <#if list??>
-        <span><h1>${list.title}</span></h1><br>
-        <span><h2></h2>${list.description}</h2></span>
-        <table>
+        <h3>${list.title}</h3>
+        <p>${list.description}</p>
             <#list list.elements as element>
-                <tr>
+                <#--<tr>
                     <#if element.status == 0>
                         <td><input type="checkbox" name="status" id="${element.id}" value="${element.status}" class="check_element"></td>
                         <td colspan="2"><input type="text" class="val_element" id="${element.id}" value="${element.title}"/></td></tr>
@@ -21,11 +20,14 @@
                         <td style="text-decoration: line-through">${element.title}</td>
                         <td><button class="deleteelement" id="${element.id}"><img  style="width:10px;height: 10px;" src="/image/cross.png"/></button></td>
                     </#if>
-                </tr>
+                </tr>-->
+                <#include "/templates/elementToDo.ftl">
             </#list>
-        </table>
-        <input type="button" value="Ajouter"/>
-        <input type="button" value="Supprimer"/>
+            <div id="elementVide" hidden>
+                <#include "/templates/elementToDoEmpty.ftl">
+            </div>
+        <input type="button" value="Ajouter un element" onclick="$('#elementVide').show();"/>
+        <input type="button" id="${list.id}" class="deleteListToDo" value="Supprimer"/>
         </#if>
     </form>
 </div>

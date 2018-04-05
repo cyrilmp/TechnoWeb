@@ -23,7 +23,7 @@
         </div>
     </div>
     <div class="row">
-        <form id ="modify_element" >
+        <form id ="modify_element">
             <input type="text" name="id" value="${element.id}" hidden>
             <table>
                 <tr>
